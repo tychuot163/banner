@@ -42,7 +42,8 @@ body,
 }
 
 .bg {
-  background-image: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/DWLR-bg.jpg');
+  /* background-image: url('https://i.imgur.com/MAo18OE.jpg'); */
+  background-image: url('https://i.imgur.com/tNLPBsJ.png');
 }
 
 .stars {
@@ -50,7 +51,8 @@ body,
 }
 
 .ground {
-  background-image: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/xyC5-ground.png');
+  /* background-image: url('https://i.imgur.com/oFXmUHG.png'); */
+  background-image: url('https://i.imgur.com/rcCVkN4.png');
 }
 
 .code {
@@ -70,14 +72,14 @@ body,
 
 .counter {
   position: absolute;
-  top: -100px;
-  right: -40px;
+  top: 180px;
+  right: 130px;
   color: white;
   background: #394a52;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 16px 40px -5px rgba(0, 0, 0, 0.5);
-  width: 120px;
+  width: 380px;
   height: 120px;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
     segoe ui, arial, sans-serif;
@@ -109,13 +111,22 @@ body,
   margin: 10px;
 }
 
-.bear {
-  top: 12.5%;
+.male {
+  top: 19.5%;
   height: 80% !important;
   min-height: 600px;
-  left: -19%;
+  left: -9%;
   background-size: 1000px !important;
-  background-image: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/TiR4-bear.png');
+  background-image: url('https://i.imgur.com/86BFRRK.png  ');
+}
+
+.female {
+  top: 18.5%;
+  height: 80% !important;
+  min-height: 600px;
+  left: 3%;
+  background-size: 1000px !important;
+  background-image: url('https://i.imgur.com/cvxM16S.png');
 }
 
 .leaves1 {
@@ -123,7 +134,7 @@ body,
   top: -2.5%;
   width: 105% !important;
   height: 105% !important;
-  background-image: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/zjhf-leaves1.png');
+  background-image: url('https://i.imgur.com/k35TJTM.png');
 }
 
 .leaves2 {
@@ -154,6 +165,8 @@ span.header-left {
   left: 40px;
   font-size: 3em;
   color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 @media only screen and (max-width: 1000px) {

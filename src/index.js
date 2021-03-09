@@ -19,9 +19,7 @@ function Counter() {
   const { count, inc, dec } = useStore()
   return (
     <div class="counter">
-      <span>{count}</span>
-      <button onClick={inc}>up</button>
-      <button onClick={dec}>down</button>
+      <span>LET'S GO</span>
     </div>
   )
 }
@@ -33,27 +31,26 @@ const trans3 = (x, y) => `translate3d(${x / 160}px,${y / 160}px,0)`
 const trans4 = (x, y) => `translate3d(${x / 120}px,${y / 120}px,0)`
 const trans5 = (x, y) => `translate3d(${x / 80}px,${y / 80}px,0)`
 const trans6 = (x, y) => `translate3d(${x / 40}px,${y / 40}px,0)`
+const trans7 = (x, y) => `translate3d(${x / 120}px,${y / 120}px,0)`
 
 function App() {
   const [props, set] = useSpring(() => ({ xy: [0, 0] }))
   return (
     <div class="main" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
       <a.div class="bg" style={{ transform: props.xy.interpolate(trans1) }} />
-      <a.div class="stars" style={{ transform: props.xy.interpolate(trans2) }} />
+      {/* <a.div class="stars" style={{ transform: props.xy.interpolate(trans2) }} /> */}
       <div class="ground" />
-      <a.div class="code" style={{ transform: props.xy.interpolate(trans3) }}>
+      {/* <a.div class="code" style={{ transform: props.xy.interpolate(trans3) }}>
         <div class="code-container">
           <PrismCode className="language-jsx" children={code} />
           <Counter />
         </div>
-      </a.div>
-      <a.div class="bear" style={{ transform: props.xy.interpolate(trans4) }} />
+      </a.div> */}
+      <a.div class="male" style={{ transform: props.xy.interpolate(trans4) }} />
+      <a.div class="female" style={{ transform: props.xy.interpolate(trans7) }} />
       <a.div class="leaves1" style={{ transform: props.xy.interpolate(trans5) }} />
-      <a.div class="leaves2" style={{ transform: props.xy.interpolate(trans6) }} />
-      <a href="https://github.com/drcmda/zustand" class="top-right" children="Github" />
-      <a href="https://twitter.com/0xca0a" class="bottom-right" children="Twitter" />
-      <a href="https://www.instagram.com/tina.henschel/" class="bottom-left" children="Illustrations @ Tina Henschel" />
-      <span class="header-left">Zustand</span>
+      {/* <a.div class="leaves2" style={{ transform: props.xy.interpolate(trans6) }} /> */}
+      <span class="header-left"><span style={{color:'darkred'}}>VL-</span>LEGEND</span>
     </div>
   )
 }
